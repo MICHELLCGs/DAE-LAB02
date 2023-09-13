@@ -1,0 +1,10 @@
+{% block content %}
+  <h2>Resultados de las Operaciones</h2>
+  <ul>
+    {% for operacion in operaciones %}
+      <li>
+        La {{ operacion.get_operacion_display }} de {{ operacion.num1 }} y {{ operacion.num2 }} es {{ operacion.resultado }}
+      </li>
+    {% endfor %}
+  </ul>
+{% endblock %}
